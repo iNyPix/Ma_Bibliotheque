@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ressources/img/icons/accept_5127139.png</file>
+        <file>ressources/img/icons/add_5127035.png</file>
+        <file>ressources/img/icons/book-club_5127197.png</file>
+        <file>ressources/img/icons/delete_5127111.png</file>
+        <file>ressources/img/icons/guide_5127152.png</file>
+        <file>ressources/img/icons/guide-book_5127168.png</file>
+        <file>ressources/img/icons/new_5127234.png</file>
+        <file>ressources/img/icons/pen_5127271.png</file>
+        <file>ressources/img/icons/setting_5127289.png</file>
+        <file>ressources/img/icons/notification_5127253.png</file>
+    </qresource>
+</RCC>

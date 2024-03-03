@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Bibliotheque</class>
+ <widget class="QMainWindow" name="Bibliotheque">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1051</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Ma Bibliotheque</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ressources.qrc">
+    <normaloff>:/ressources/img/icons/new_5127234.png</normaloff>:/ressources/img/icons/new_5127234.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">gridline-color: rgb(205, 171, 143);</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>1178</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="mainLayout" stretch="0,1,2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="menuLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="buttonAddBook">
+         <property name="toolTip">
+          <string>Ajouter un livre</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/ressources/img/icons/add_5127035.png</normaloff>:/ressources/img/icons/add_5127035.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonImportBook">
+         <property name="toolTip">
+          <string>Importer un livre depuis internet</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/ressources/img/icons/book-club_5127197.png</normaloff>:/ressources/img/icons/book-club_5127197.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonDeleteBook">
+         <property name="toolTip">
+          <string>Supprimer le livre</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/ressources/img/icons/delete_5127111.png</normaloff>:/ressources/img/icons/delete_5127111.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonSaveBook">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>Enregistrer les modifications</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/ressources/img/icons/accept_5127139.png</normaloff>:/ressources/img/icons/accept_5127139.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="dbNameLabel">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLCDNumber" name="lcdNumber">
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="smallDecimalPoint">
+          <bool>false</bool>
+         </property>
+         <property name="digitCount">
+          <number>5</number>
+         </property>
+         <property name="segmentStyle">
+          <enum>QLCDNumber::Flat</enum>
+         </property>
+         <property name="intValue" stdset="0">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="nbrBooksImg">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="ressources.qrc">:/ressources/img/icons/new_5127234.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="infoLayout" stretch="0,2">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="photoLayout">
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="idLabel">
+           <property name="text">
+            <string>Id</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="idLineEdit">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGraphicsView" name="bookPhoto"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="infoLayout_1">
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>50</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="titreLabel">
+           <property name="text">
+            <string>Titre</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="titleLineEdit"/>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="categoriesLayout">
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="agLayout">
+             <item>
+              <widget class="QLabel" name="auteursLabel">
+               <property name="text">
+                <string>Auteur(s)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="authorLineEdit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Genre</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="genderLineEdit"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="ecLayout">
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="editeurLabel">
+               <property name="text">
+                <string>Editeur</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="editorLineEdit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="collectionLabel">
+               <property name="text">
+                <string>Collection</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="collectionLineEdit"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Résumé</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="summaryPlainTextEdit"/>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="neaptcLayout">
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="neapLayout">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Nb Exemplaires</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="exemplaryLineEdit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Année de parution</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="yearLineEdit"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="tomecodeLayout">
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="tomeLayout">
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="debutTLayout">
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>Tome</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="tomeSpinBox"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>Sur</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="tomeEndSpinBox"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Code ISBN</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="isbnLineEdit"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="booksView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1051</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBiblioth_que">
+    <property name="title">
+     <string>Bibliothèque</string>
+    </property>
+    <addaction name="actionNouvelle_biblioth_que"/>
+    <addaction name="separator"/>
+    <addaction name="actionOuvrir_une_biblioth_que"/>
+    <addaction name="separator"/>
+    <addaction name="actionSupprimer_une_biblioth_que"/>
+    <addaction name="actionR_initialiser_la_biblioth_que"/>
+    <addaction name="actionRenommer_la_biblioth_que"/>
+   </widget>
+   <widget class="QMenu" name="menuLivres">
+    <property name="title">
+     <string>Livres</string>
+    </property>
+    <widget class="QMenu" name="menuAjouter_un_livre">
+     <property name="title">
+      <string>Ajouter un livre</string>
+     </property>
+     <addaction name="actionImporter_depuis_Amazon"/>
+    </widget>
+    <addaction name="menuAjouter_un_livre"/>
+    <addaction name="separator"/>
+    <addaction name="actionSupprimer_le_livre"/>
+    <addaction name="actionEnregistrer_le_livre"/>
+    <addaction name="separator"/>
+    <addaction name="actionMode_lecture_seule"/>
+   </widget>
+   <widget class="QMenu" name="menuRechercher">
+    <property name="title">
+     <string>Rechercher</string>
+    </property>
+    <addaction name="actionRecherche_simple"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecherche_par_ISBN"/>
+    <addaction name="actionRecherche_par_ID"/>
+    <addaction name="separator"/>
+    <addaction name="actionAfficher_tout_les_livres"/>
+   </widget>
+   <widget class="QMenu" name="menuCat_gories">
+    <property name="title">
+     <string>Catégories</string>
+    </property>
+    <addaction name="actionAuteurs"/>
+    <addaction name="actionGenres"/>
+    <addaction name="actionEditeurs"/>
+    <addaction name="actionCollections"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <widget class="QMenu" name="menuLangues">
+     <property name="title">
+      <string>Langues</string>
+     </property>
+     <addaction name="actionFrancais"/>
+     <addaction name="actionAnglais"/>
+    </widget>
+    <addaction name="menuLangues"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionA_propos"/>
+   </widget>
+   <addaction name="menuBiblioth_que"/>
+   <addaction name="menuLivres"/>
+   <addaction name="menuRechercher"/>
+   <addaction name="menuCat_gories"/>
+   <addaction name="menuOption"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNouvelle_biblioth_que">
+   <property name="text">
+    <string>Nouvelle bibliothèque</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionOuvrir_une_biblioth_que">
+   <property name="text">
+    <string>Ouvrir une bibliothèque</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_une_biblioth_que">
+   <property name="text">
+    <string>Supprimer la bibliothèque</string>
+   </property>
+  </action>
+  <action name="actionR_initialiser_la_biblioth_que">
+   <property name="text">
+    <string>Réinitialiser la bibliothèque</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_le_livre">
+   <property name="text">
+    <string>Supprimer le livre</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_le_livre">
+   <property name="text">
+    <string>Enregistrer le livre</string>
+   </property>
+  </action>
+  <action name="actionMode_lecture_seule">
+   <property name="text">
+    <string>Mode lecture seule</string>
+   </property>
+  </action>
+  <action name="actionImporter_depuis_Amazon">
+   <property name="text">
+    <string>Importer depuis Amazon</string>
+   </property>
+  </action>
+  <action name="actionRecherche_simple">
+   <property name="text">
+    <string>Recherche simple</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_ISBN">
+   <property name="text">
+    <string>Recherche par ISBN</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_ID">
+   <property name="text">
+    <string>Recherche par ID</string>
+   </property>
+  </action>
+  <action name="actionAfficher_tout_les_livres">
+   <property name="text">
+    <string>Afficher tout</string>
+   </property>
+  </action>
+  <action name="actionAuteurs">
+   <property name="text">
+    <string>Auteurs</string>
+   </property>
+  </action>
+  <action name="actionGenres">
+   <property name="text">
+    <string>Genres</string>
+   </property>
+  </action>
+  <action name="actionEditeurs">
+   <property name="text">
+    <string>Editeurs</string>
+   </property>
+  </action>
+  <action name="actionCollections">
+   <property name="text">
+    <string>Collections</string>
+   </property>
+  </action>
+  <action name="actionRenommer_la_biblioth_que">
+   <property name="text">
+    <string>Renommer la bibliothèque</string>
+   </property>
+  </action>
+  <action name="actionFrancais">
+   <property name="text">
+    <string>Francais</string>
+   </property>
+  </action>
+  <action name="actionAnglais">
+   <property name="text">
+    <string>Anglais</string>
+   </property>
+  </action>
+  <action name="actionA_propos">
+   <property name="text">
+    <string>A propos</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

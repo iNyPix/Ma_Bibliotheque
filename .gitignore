@@ -1,0 +1,73 @@
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Ignore all .pro.user files
+*.pro.user
+
+# Ignore the .idea folder
+.idea/
+
+# Ignore the .qtc_clangd folder
+.qtc_clangd/
+
+# Ignore the .sqlite folder
+.sqlite/
+
+# Ignore the .qm folder
+.qm/
+
+# Ignore all moc_*.cpp files
+moc_*.cpp
+
+# Ignore all moc_*.o files
+moc_*.o
+
+# Ignore all qrc_*.cpp files
+qrc_*.cpp
+
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.h
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
+
+# Qt unit tests
+target_wrapper.*
+
+# QtCreator
+*.autosave
+
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
+
+
+# QtCreator local machine specific files for imported projects
+*creator.user*
+
+*_qmlcache.qrc
